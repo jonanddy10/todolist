@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.to-do-list {
+  color: orange;
+  width: 100vw;
+  border: green solid 1px;
+}
+.list-items {
+  display: flex;
+  flex-direction: column;
+  border: blue solid 1px;
+  list-style-type: none;
+}
+.list-text {
+  display: flex;
+  justify-content: space-around;
+
+}
