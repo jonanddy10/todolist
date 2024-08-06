@@ -1,15 +1,13 @@
 import React from 'react'
 import Today from '../components/Today'
-import Later from '../components/Later'
+import General from '../components/General'
 
 function reminders() {
   return (
     <>
-      <div>
-        TO DO:
-      </div>
+      <div></div>
     <Today/>
-    <Later/>
+    <General/>
     </>
   )
 }

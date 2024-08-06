@@ -46,17 +46,17 @@ function today() {
     <div className='to-do-list'>
       <h1>Today</h1>
       <div>
-        <input type='text' placeholder='Buy milk' value={newTask} onChange={handleInputChange}/>
-        <button onClick={addTask}>+</button>
+        <input type='text' placeholder='Buy milk' value={newTask} onChange={handleInputChange} className='input-bar'/>
+        <button onClick={addTask} className='add-button'>+</button>
       </div>
 
       <ul className='list-items'>
         {task.map((task, index) =>
         <li key={index}>
           <span className='list-text'>{task}</span>
-          <button className='delete-button' onClick={() => deleteTask(index)}>delete</button>
-          <button className='raise-button' onClick={() => raise(index)}>raise</button>
-          <button className='lower-button' onClick={() => lower(index)}>lower</button>
+          <button className='delete-button task-button' onClick={() => deleteTask(index)}>delete</button>
+          <button className='raise-button task-button' onClick={() => raise(index)}>raise</button>
+          <button className='lower-button task-button' onClick={() => lower(index)}>lower</button>
         </li>
         )}
       </ul>
