@@ -45,8 +45,8 @@ function today() {
     <>
     <div className='to-do-list'>
       <h1>Today</h1>
-      <div>
-        <input type='text' placeholder='Buy milk' value={newTask} onChange={handleInputChange} className='input-bar'/>
+      <div className='header-bar'>
+        <input type='text' placeholder=' Buy milk' value={newTask} onChange={handleInputChange} className='input-bar'/>
         <button onClick={addTask} className='add-button'>+</button>
       </div>
 
@@ -55,6 +55,7 @@ function today() {
         <li key={index}>
           <span className='list-text'>{task}</span>
           <button className='delete-button task-button' onClick={() => deleteTask(index)}>delete</button>
+          <button className='done-button task-button' onClick={() => finishedTask(index)}>done</button>
           <button className='raise-button task-button' onClick={() => raise(index)}>raise</button>
           <button className='lower-button task-button' onClick={() => lower(index)}>lower</button>
         </li>
