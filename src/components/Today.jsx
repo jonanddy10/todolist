@@ -51,15 +51,20 @@ function today() {
       </div>
 
       <ul className='list-items'>
-        {task.map((task, index) =>
+        {task.map((taskItem, index) => {
+          console.log('Index:', index, 'Task length:', task.length, 'Task:', taskItem);
+          return (
         <li key={index}>
-          <span className='list-text'>{task}</span>
+          <span className='list-text'>{taskItem}</span>
           <button className='delete-button task-button' onClick={() => deleteTask(index)}>delete</button>
           <button className='done-button task-button' onClick={() => finishedTask(index)}>done</button>
-          <button className='raise-button task-button' onClick={() => raise(index)}>raise</button>
-          <button className='lower-button task-button' onClick={() => lower(index)}>lower</button>
+          {/* hide button if at the end of the array */}
+          {index > 0 && (<button className='raise-button task-button' onClick={() => raise(index)}>raise</button>)} 
+          {/* hide button if at the start of the array */}
+          {index < task.length-1 && (<button className='lower-button task-button' onClick={() => lower(index)}>lower</button>)}
         </li>
-        )}
+        )
+        })}
       </ul>
     </div>
     </>
