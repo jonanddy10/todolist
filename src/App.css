@@ -71,7 +71,7 @@ body {
   cursor: pointer;
 }
 .delete-button {
-  background-color: red;
+  background-color: rgb(96, 15, 15);
   border: none;
   color: white;
 }
@@ -79,4 +79,8 @@ body {
   background-color: green;
   border: none;
   color: white;
+}
+.icons {
+  height: 20px;
+  width: 20px;
 }
