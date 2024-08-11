@@ -60,12 +60,12 @@ function today() {
           return (
         <li key={index}>
           <span className='list-text'>{taskItem}</span>
-          <button className='delete-button task-button' onClick={() => deleteTask(index)}><img src={trashIcon} alt='delete' className='icons'/></button>
-          <button className='done-button task-button' onClick={() => finishedTask(index)}><img src={doneIcon} alt='done' className='icons'/></button>
           {/* hide button if at the end of the array */}
           {index > 0 && (<button className='raise-button task-button' onClick={() => raise(index)}><img src={raiseIcon} alt='raise' className='icons'/></button>)} 
           {/* hide button if at the start of the array */}
           {index < task.length-1 && (<button className='lower-button task-button' onClick={() => lower(index)}><img src={lowerIcon} alt='lower' className='icons'/></button>)}
+          <button className='done-button task-button' onClick={() => finishedTask(index)}><img src={doneIcon} alt='done' className='icons'/></button>
+          <button className='delete-button task-button' onClick={() => deleteTask(index)}><img src={trashIcon} alt='delete' className='icons'/></button>
         </li>
         )
         })}
