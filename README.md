@@ -12,16 +12,12 @@ To view this webapp, simply clone this repository into your code editor, then ty
 
 ## License
 
-None
+Free
 
 ## Authors
 
 - **Jon** - _Personal project_ -
-  (https://github.com/jonanddy)
-
-## License
-
-Free
+  (https://github.com/jonanddy10)
 
 ## Future updates
 
