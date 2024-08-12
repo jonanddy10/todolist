@@ -1,18 +1,18 @@
 # Quick Reminders Premium+
 
-This is a very simple, easy to use To Do List app written using Javascript and React.js to demonstrate the use of the useState hook. This example displays pre-written tasks from the 'task' array.
+This is a very simple, easy to use 'To Do List' webapp written in Javascript. The goal of this webapp is to demonstrate the use of the useState hook within the React library. Quick Reminders Premium+ displays pre-written tasks from the 'task' array and the client is able to add, delete, raise and lower each task priority.
 
 ## Getting Started
 
-To view this webapp simply clone this repository into your code editor and type 'npm run dev' into the terminal and click on the provided link.
+To view this webapp, simply clone this repository into your code editor, then type 'npm run dev' into the terminal and press 'Enter' on the keyboard. Finally, click on the link provided.
 
 ## Built With
 
-- React & Vite
+- Vite, React.js
 
-## Version
+## License
 
-Final
+None
 
 ## Authors
 
@@ -22,3 +22,9 @@ Final
 ## License
 
 Free
+
+## Future updates
+
+- ability to edit task in list
+- improved user-interface (buttons layout)
+- improved user-experience (background and theme)
